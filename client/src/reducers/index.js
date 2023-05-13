@@ -1,14 +1,14 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
 
-import productsReducer from "./productsReducer";
-import pathReducer from "./pathReducer";
-import selectedProductReducer from "./currentProdReducer";
-import basketproductsReducer from "./basketReducer";
-import carsReducer from "./carsReducer";
-import whishListReducer from "./whishListReducer";
-import selectedCarReducer from "./currentCarReducer";
-import fetchedCarsReducer from "./fetchedCarsReducer";
-import filteractivationReducer from "./filterReducer";
+import productsReducer from './productsReducer';
+import pathReducer from './pathReducer';
+import selectedProductReducer from './currentProdReducer';
+import basketproductsReducer from './basketReducer';
+import carsReducer from './carsReducer';
+import whishListReducer from './whishListReducer';
+import selectedCarReducer from './currentCarReducer';
+import fetchedCarsReducer from './fetchedCarsReducer';
+import filteractivationReducer from './filterReducer';
 
 export default combineReducers({
   locationPath: pathReducer,
@@ -19,5 +19,5 @@ export default combineReducers({
   cars: carsReducer,
   whishlistproducts: whishListReducer,
   fetchedCars: fetchedCarsReducer,
-  homefilterActivated: filteractivationReducer
+  homefilterActivated: filteractivationReducer,
 });

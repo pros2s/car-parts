@@ -17,18 +17,22 @@ module.exports = (app) => {
       result = result.filter(function (car) {
         return car.condition === condition;
       });
+
     if (body != undefined && body !== '')
       result = result.filter(function (car) {
         return car.body === body;
       });
+
     if (make != undefined && make !== '')
       result = result.filter(function (car) {
         return car.make === make;
       });
+
     if (year != undefined && year !== '')
       result = result.filter(function (car) {
         return car.year === year;
       });
+
     if (transition != undefined && transition !== '')
       result = result.filter(function (car) {
         return car.transition === transition;
@@ -44,11 +48,13 @@ module.exports = (app) => {
 
     console.log(min);
     console.log(max);
+
     if (priceRange != undefined && priceRange !== '')
       result = result.filter(function (car) {
         console.log(parseInt(car.price, 10) <= max && parseInt(car.price, 10) >= min);
         return parseInt(car.price, 10) <= max && parseInt(car.price, 10) >= min;
       });
+
     res.send(result);
   });
 };
