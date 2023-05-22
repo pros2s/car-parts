@@ -107,7 +107,7 @@ const Footer = () => {
             <div className='row'>
               <div className='col-md-6'>
                 <p>
-                  © 2016 Designed by <a href='https://github.com/pros2s'>pross</a>. All rights
+                  © 2023 Designed by <a href='https://github.com/pros2s'>pross</a>. All rights
                   reserved
                 </p>
               </div>
